@@ -174,9 +174,71 @@ ul {
 
 /* Portfolio */
 
+.main-portfolio {
+  background-color: #e5e5e5;
+}
+
 .portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.none-title {
+  color: rgba(255, 255, 255, 0);
+  margin: 0;
+  height: 0;
+}
+
+.button-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.button-list .item {
+  margin-left: 8px;
+}
+
+.kind {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.kind > img {
+  height: 294px;
+}
+
+.kind .kind-li {
+  width: 370px;
+  background-color: #eeeeee;
+  border: 1px solid #ffffff;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.kind .kind-li:nth-child(3n) {
+  margin-right: 0;
+}
+
+.kind .kind-li:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.kind .portfolio-title {
+  width: 322px;
+  height: 36px;
+  font-size: 18px;
+  margin: 20px 24px 4px 24px;
+}
+
+.kind .portfolio-text {
+  width: 322px;
+  height: 30px;
+  font-size: 16px;
+  margin: 0 24px 20px 24px;
 }
 
 /* Button */
@@ -204,16 +266,22 @@ ul {
 
 .button-portfolio {
   background-color: var(--grey-color);
-  cursor: pointer;
-  outline: none;
-  border: 0;
 }
 
 .button-all {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-  outline: none;
+}
+
+.button-all,
+.button-portfolio {
+  cursor: pointer;
+  font-weight: 500;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 6px 22px 6px 22px;
   border: 0;
+  outline: none;
 }
 
 .button-portfolio:hover,
@@ -338,10 +406,28 @@ ul {
   margin: 0;
 }
 
+.team-list-li .title {
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.team-list-li .text {
+  margin: 0 auto;
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 /* Footer */
 
 .footer {
   background-color: var(--bgd-color);
+  width: 1600px;
+  height: 252px;
+  text-decoration: none;
+  line-height: 1.714;
 }
 
 .logotip {
@@ -364,16 +450,24 @@ ul {
 }
 
 .address .town {
+  display: inline-block;
   color: var(--primary-white-color);
   font-size: 14px;
   line-height: 1.71;
+  width: 231px;
+  margin-top: 20px;
+  margin-bottom: 0;
 }
 
 .address .footer-link {
+  display: inline-block;
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   line-height: 1.71;
   text-decoration: none;
+  width: 231px;
+  margin-top: 9px;
+  margin-bottom: 0;
 }
 
 .address .footer-link:hover,
