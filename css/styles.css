@@ -46,6 +46,12 @@ body {
   list-style: none;
 }
 
+/* Header */
+
+.page-header {
+  border: 1px solid #ececec;
+}
+
 /* logo */
 
 .logo-web {
@@ -248,11 +254,6 @@ body {
 }
 
 /* Portflio */
-
-.portfolio-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
 .btn-list {
   display: flex;
