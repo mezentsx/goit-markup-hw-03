@@ -253,6 +253,14 @@ body {
   margin-bottom: 50px;
 }
 
+.no-pdn-top {
+  padding-top: 0;
+}
+
+.none {
+  display: none;
+}
+
 /* Portflio */
 
 .btn-list {
@@ -300,8 +308,11 @@ body {
   margin-right: 30px;
 } */
 
-.portfolio-list img {
-  margin-bottom: 20px;
+.portfolio-list .portfolio-card {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 .portfolio-title {
@@ -311,8 +322,6 @@ body {
   letter-spacing: 0.06em;
   margin-top: 0;
   margin-bottom: 4px;
-  margin-left: 24px;
-  margin-right: 24px;
 }
 
 .portfolio-text {
@@ -320,9 +329,7 @@ body {
   font-size: 16px;
   line-height: 1.87;
   margin-top: 0;
-  margin-bottom: 20px;
-  margin-left: 24px;
-  margin-right: 24px;
+  margin-bottom: 0;
 }
 
 /* Features */
@@ -384,15 +391,18 @@ body {
   margin-left: 30px;
 }
 
-.team-list img {
-  margin-bottom: 30px;
-}
-
-.team-list .title {
+.team-list .card {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.team-list .title {
   margin-top: 0;
   margin-bottom: 10px;
   padding: 0;
@@ -400,12 +410,7 @@ body {
 
 .team-list .text {
   color: var(--primary-text-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 30px;
+  margin: 0;
   padding: 0;
 }
 
